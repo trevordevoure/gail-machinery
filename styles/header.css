@@ -1,5 +1,5 @@
 .header {
-    height: 55px;
+    height: 59px;
   margin-top: 0px;
   margin-bottom: 30px;
     display: flex;
@@ -18,23 +18,11 @@
     border-bottom-color: rgb(228, 228, 228);
     
   }
-  .search-bar {
-    height: 36px;
-    padding-left: 0px;
-    padding-bottom: 0px;
-    font-size: 16px;
-    border: 1px solid rgb(192, 192, 192);
-    border-radius: 2px;
-    box-shadow: inset 1px 2px 3px rgba(0, 0, 0, 0.05);
-    
-  }
   
-  .search-bar::placeholder {
-    font-size: 16px;
-  }
   
+   
   .company-logo{
-    height: 50px;
+    height: 58px;
     width:200px;
     background-color: rgb(240, 240, 240);
     border-width: 1px;
@@ -63,6 +51,74 @@
  padding-left: 16px;
  margin-right:-40px;
   }
+  .hire-button{
+    background-color:transparent;
+    border-color:rgb(41,118,211);
+    border-style: ridge;
+    border-width: 1px;
+    color:rgb(237, 241, 245);
+   
+    border-radius: 2px;
+    cursor: pointer;
+    transition: background-color 1s,color 1s;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 8px;
+    padding-left: 16px;
+   
+  }
+
+  /*dropdown feature on the hire button*/
+  .hirebtn {
+    background-color:transparent;
+border-color:rgb(41,118,211);
+border-style: ridge;
+border-width: 1px;
+color:rgb(237, 241, 245);
+
+border-radius: 2px;
+cursor: pointer;
+transition: background-color 1s,color 1s;
+padding-top: 10px;
+padding-bottom: 10px;
+padding-right: 8px;
+padding-left: 16px;
+  }
+  
+  .menu {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .menu-content {
+    display: none;
+    position: absolute;
+    background-color: #8dd6f3;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .menu-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .menu-content a:hover {background-color: #f1f1f1}
+  
+  .menu:hover .menu-content {
+    display: block;
+  }
+  
+  .menu:hover .hirebtn {
+    background-color:rgb(25, 168, 224);
+  }
+/*end of menu interface of the hire button*/
+
+
+  
   .supply-button{
     background-color:transparent;
     border-color:rgb(41,118,211);
@@ -77,7 +133,7 @@
     padding-bottom: 10px;
     padding-right: 8px;
     padding-left: 16px;
-    margin-right:-40px;
+    
   }
   .contact-button{
     background-color:transparent;
